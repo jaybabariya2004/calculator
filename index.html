@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    
+    <div class="main">
+
+        <form>
+            <input class="input" type="text" id="Calc" name="result"/><br/>
+
+            <div class="one">
+                <input class="btn" type="button" value="1" onclick="form.result.value+='1'"/>
+                <input class="btn" type="button" value="2" onclick="form.result.value+='2'"/>
+                <input class="btn" type="button" value="3" onclick="form.result.value+='3'"/>
+                <input class="btn" type="button" value="+" onclick="form.result.value+='+'"/><br/>
+            </div>
+
+            <div class="one">
+            <input class="btn" type="button" value="4" onclick="form.result.value+='4'"/>
+            <input class="btn" type="button" value="5" onclick="form.result.value+='5'"/>
+            <input class="btn" type="button" value="6" onclick="form.result.value+='6'"/>
+            <input class="btn" type="button" value="-" onclick="form.result.value+='-'"/><br/>
+            </div>
+            
+            <div class="one">
+            <input class="btn" type="button" value="7" onclick="form.result.value+='7'"/>
+            <input class="btn" type="button" value="8" onclick="form.result.value+='8'"/>
+            <input class="btn" type="button" value="9" onclick="form.result.value+='9'"/>
+            <input class="btn" type="button" value="*" onclick="form.result.value+='*'"/><br/>
+            </div>
+            
+            <div class="one">
+            <input class="btn" type="button" value="0" onclick="form.result.value+='0'"/>      
+            <input class="btn" type="button" value="AC" onclick="form.result.value=''"/>
+            <input class="btn" type="button" value="=" onclick="form.result.value=eval(form.result.value)"/>
+            <input class="btn" type="button" value="/" onclick="form.result.value+='/'"/>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
